@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colour Book Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Colour Book Game</h1>
+    <p>Guess the color: <span id="colorDisplay"></span></p>
+    <p>⏱ Time Left: <span id="timer">10</span>s | 🎯 Score: <span id="score">0</span></p>
+
+    <div class="color-buttons" id="colorButtons"></div>
+
+    <p id="message"></p>
+
+    <div class="controls">
+      <button onclick="startGame()">Play Again</button>
+      <button onclick="setMode(3)">Easy</button>
+      <button onclick="setMode(6)">Hard</button>
+    </div>
+  </div>
+
+  <audio id="correctSound" src="correct.mp3"></audio>
+  <audio id="wrongSound" src="wrong.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
